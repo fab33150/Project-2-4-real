@@ -1,0 +1,218 @@
+/*Base Layouts*/
+
+* {
+ box-sizing: border-box;
+
+}
+
+body {
+text-align: center;
+background-color: lightblue;
+font-family: "Roboto", sans-serif;
+
+}
+
+.name-heading {
+font-size: .75rem;
+font-family: "Roboto", sans-serif;
+font-weight: bolder;
+text-align: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+
+
+
+ul {
+
+  list-style: none;
+}
+
+li {
+background-color: white;
+display: block;
+margin-bottom: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+
+p {
+  font-size: .6rem;
+  text-align: center;
+}
+
+.thick-font {
+font-size: 1rem;
+font-family: "Notable", sans-serif;
+font-weight: 200;
+}
+
+img {
+max-width: 100%;
+}
+
+.profile {
+width: 40;
+
+}
+h2 {
+text-transform: uppercase;
+font-weight: 700;
+font-size: .6rem;
+margin-top: 30px;
+margin-bottom: 25px;
+font-family: "Slabo 27px", sans-serif;
+}
+
+.contact {
+padding-top: 20px;
+}
+
+h3 {
+font-size: .7rem;
+font-weight: 100;
+
+}
+.scale {
+  width: 40%;
+}
+
+:link {
+text-decoration: none;
+
+}
+:visited {
+  color: black;
+}
+
+/*Layout Styles*/
+
+.container {
+   padding-top: 1em;
+   padding-bottom: .5em;
+   padding-left: 1em;
+   padding-right: 1em;
+   text-align: center;
+   margin-bottom: 25px;
+
+}
+
+.main-nav {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    display: block;
+}
+
+
+/*----Portfolio---------*/
+
+.project-slide {
+      margin-top: 30px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+}
+
+.project-caption {
+      width: 100%;
+     text-align: center;
+     margin-top: 15px;
+     margin-bottom: 15px;
+
+}
+
+/*-----Footer-----*/
+.footer-nav {
+   width: 100%;
+   border-top: 1px solid black;
+   display: inline-block;
+}
+
+.footer-name {
+    float: left;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Cookie', cursive;
+}
+
+.footer-top {
+  float: right;
+  font-size: 1rem;
+}
+/*Floats-------*/
+
+footer {
+background-color: lightgrey;
+font-size: 1rem;
+}
+
+/*---Media Queries---*/
+/*----------768 Breakpoint---*/
+
+@media (min-width: 769px) {
+
+.main-nav,
+.main-nav li {
+    text-align: center;
+    padding-left: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    background: none;
+  }
+
+
+
+.nav-layout {
+width: 90%;
+max-width: none;
+margin: 0 auto;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+.profile-cap {
+width: 60%;
+padding-right: 1em;
+float: left;
+text-align: left;
+font-size: 1rem;
+}
+
+.profile {
+  width: 40%;
+  float: right;
+}
+
+.main-container {
+      width: 90%;
+      margin: 0 auto;
+  }
+.project-wrap {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 1em 0;
+
+.project-slide {
+display: inline-block;
+width: 48%;
+padding: 1em;
+vertical-align: top;
+max-width: none;
+}
+}
+/*---Float Clearfix---*/
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
